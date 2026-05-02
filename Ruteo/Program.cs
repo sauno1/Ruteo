@@ -1,4 +1,4 @@
-namespace Ruteo.RuteoTransporte
+namespace Ruteo.RuteoUltimaMilla
 {
     internal static class Program
     {
@@ -11,7 +11,7 @@ namespace Ruteo.RuteoTransporte
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new FormRuteoTransporte());
+            Application.Run(new RuteoUltimaMilla());
         }
     }
 }

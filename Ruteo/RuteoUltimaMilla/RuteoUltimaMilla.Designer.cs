@@ -300,7 +300,7 @@
         private GroupBox groupBox2;
         private Button BtnAgregar;
         private Button BtnSubir;
-        private Button button2;
+        private Button BtnBajar;
         private Button BtnQuitar;
         private GroupBox groupBox3;
         private ComboBox comboBox1;
