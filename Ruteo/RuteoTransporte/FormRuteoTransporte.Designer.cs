@@ -47,12 +47,15 @@
             columnHeader8 = new ColumnHeader();
             columnHeader9 = new ColumnHeader();
             columnHeader10 = new ColumnHeader();
-            BtnAgregar = new Button();
+            BtnAgregarSeleccion = new Button();
             groupBox3 = new GroupBox();
+            comboBox2 = new ComboBox();
+            label1 = new Label();
             comboBox1 = new ComboBox();
             LabelEmpresa = new Label();
             BtnCancelar = new Button();
             BtnConfirmar = new Button();
+            BtnAgregarTodos = new Button();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
@@ -139,9 +142,10 @@
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(BtnAgregarTodos);
             groupBox2.Controls.Add(BtnQuitar);
             groupBox2.Controls.Add(LvGuiasSeleccionadas);
-            groupBox2.Controls.Add(BtnAgregar);
+            groupBox2.Controls.Add(BtnAgregarSeleccion);
             groupBox2.Controls.Add(LvGuiasDisponibles);
             groupBox2.Location = new Point(26, 95);
             groupBox2.Name = "groupBox2";
@@ -194,27 +198,46 @@
             columnHeader10.Text = "Fecha admisión";
             columnHeader10.Width = 135;
             // 
-            // BtnAgregar
+            // BtnAgregarSeleccion
             // 
-            BtnAgregar.Location = new Point(14, 163);
-            BtnAgregar.Name = "BtnAgregar";
-            BtnAgregar.Size = new Size(679, 23);
-            BtnAgregar.TabIndex = 6;
-            BtnAgregar.Text = "Agregar";
-            BtnAgregar.UseVisualStyleBackColor = true;
+            BtnAgregarSeleccion.Location = new Point(14, 163);
+            BtnAgregarSeleccion.Name = "BtnAgregarSeleccion";
+            BtnAgregarSeleccion.Size = new Size(280, 23);
+            BtnAgregarSeleccion.TabIndex = 6;
+            BtnAgregarSeleccion.Text = "Agregar selección";
+            BtnAgregarSeleccion.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
+            groupBox3.Controls.Add(comboBox2);
+            groupBox3.Controls.Add(label1);
             groupBox3.Controls.Add(LabelCDDestino);
             groupBox3.Controls.Add(comboBox1);
             groupBox3.Controls.Add(cmbCDDestino);
             groupBox3.Controls.Add(LabelEmpresa);
             groupBox3.Location = new Point(26, 483);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(709, 154);
+            groupBox3.Size = new Size(709, 205);
             groupBox3.TabIndex = 8;
             groupBox3.TabStop = false;
             groupBox3.Text = "Configuración del transporte";
+            // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(20, 158);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(673, 23);
+            comboBox2.TabIndex = 5;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(20, 140);
+            label1.Name = "label1";
+            label1.Size = new Size(48, 15);
+            label1.TabIndex = 4;
+            label1.Text = "Servicio";
             // 
             // comboBox1
             // 
@@ -235,7 +258,7 @@
             // 
             // BtnCancelar
             // 
-            BtnCancelar.Location = new Point(579, 647);
+            BtnCancelar.Location = new Point(579, 707);
             BtnCancelar.Name = "BtnCancelar";
             BtnCancelar.Size = new Size(75, 23);
             BtnCancelar.TabIndex = 9;
@@ -244,18 +267,27 @@
             // 
             // BtnConfirmar
             // 
-            BtnConfirmar.Location = new Point(660, 647);
+            BtnConfirmar.Location = new Point(660, 707);
             BtnConfirmar.Name = "BtnConfirmar";
             BtnConfirmar.Size = new Size(75, 23);
             BtnConfirmar.TabIndex = 10;
             BtnConfirmar.Text = "Confirmar";
             BtnConfirmar.UseVisualStyleBackColor = true;
             // 
+            // BtnAgregarTodos
+            // 
+            BtnAgregarTodos.Location = new Point(413, 163);
+            BtnAgregarTodos.Name = "BtnAgregarTodos";
+            BtnAgregarTodos.Size = new Size(280, 23);
+            BtnAgregarTodos.TabIndex = 9;
+            BtnAgregarTodos.Text = "Agregar todos";
+            BtnAgregarTodos.UseVisualStyleBackColor = true;
+            // 
             // FormRuteoTransporte
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(761, 693);
+            ClientSize = new Size(761, 755);
             Controls.Add(BtnConfirmar);
             Controls.Add(BtnCancelar);
             Controls.Add(groupBox3);
@@ -289,7 +321,7 @@
         private ColumnHeader columnHeader3;
         private ColumnHeader columnHeader4;
         private ColumnHeader columnHeader5;
-        private Button BtnAgregar;
+        private Button BtnAgregarSeleccion;
         private ListView LvGuiasSeleccionadas;
         private ColumnHeader columnHeader6;
         private ColumnHeader columnHeader7;
@@ -299,5 +331,8 @@
         private Button BtnQuitar;
         private Button BtnCancelar;
         private Button BtnConfirmar;
+        private ComboBox comboBox2;
+        private Label label1;
+        private Button BtnAgregarTodos;
     }
 }
